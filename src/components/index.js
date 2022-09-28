@@ -1,0 +1,5 @@
+export { default as Header } from './header'
+export { default as About } from './about'
+export { default as Home } from './home'
+export { default as Dashboard } from './dashboard'
+export { default as Body } from './body'
