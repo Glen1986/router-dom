@@ -2,11 +2,11 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { Home, About, Dashboard } from '../../components'
+import { Home, About, Dashboard, Portafolio } from '../../components'
 export default ({title, ...rest}) => {
   return(
     <>
-        <Switch>
+        <Switch {...rest}>
           <Route exact path="/">
             <Home title='Home'/>
           </Route>
@@ -15,6 +15,9 @@ export default ({title, ...rest}) => {
           </Route>
           <Route path="/dashboard">
             <Dashboard title="Dashboard"/>
+          </Route>
+          <Route path="/portafolio">
+            <Portafolio title="Portafolio"/>
           </Route>
         </Switch>
 

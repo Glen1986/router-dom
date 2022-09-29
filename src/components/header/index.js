@@ -1,8 +1,6 @@
 import React from 'react'
+import './style.css'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link
 } from "react-router-dom";
 
@@ -20,6 +18,9 @@ export default ({ title, ...rest}) => {
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/portafolio">Portafolio</Link>
           </li>
         </ul>
 
