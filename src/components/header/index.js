@@ -23,8 +23,6 @@ export default ({ title, ...rest}) => {
             <Link to="/portafolio">Portafolio</Link>
           </li>
         </ul>
-
-
       </section>
     </header>
   )
