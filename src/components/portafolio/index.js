@@ -1,15 +1,12 @@
-import { NavLink, useRouteMatch, Redirect } from 'react-router-dom'
+import { NavLink, useRouteMatch } from 'react-router-dom'
 import { Proyectos } from '../../components'
 import React from 'react';
-
+// eslint-disable-next-line
 export default ()=>{
- const loggedIn = false
-  if(!loggedIn){
-    return <Redirect to ="/"/>
-  }
+
   const match = useRouteMatch()
   const myUrl = match.url
-//
+
   return(
     <>
       <h1>Portafolio</h1>

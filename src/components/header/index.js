@@ -3,8 +3,7 @@ import './style.css'
 import {
   NavLink
 } from "react-router-dom";
-import {loggedIn} from '../portafolio'
-
+// eslint-disable-next-line
 export default ({ title, ...rest}) => {
   return(
     <header {...rest}>
@@ -25,8 +24,8 @@ export default ({ title, ...rest}) => {
           </li>
            <li>
              <select id="loggedIn" name="loggedIn">
-               <option value={loggedIn}>In</option>
-               <option value={!loggedIn}>Out</option>
+               <option >In</option>
+               <option >Out</option>
              </select>
            </li>
         </ul>
